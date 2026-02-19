@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blood Pressure Tracker — Terms of Use</title>
+  <meta name="description" content="Terms of Use for the Blood Pressure Tracker app." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a30;
+      --text:#e8eefc;
+      --muted:#a9b7d6;
+      --line:rgba(255,255,255,.12);
+      --accent:#6ea8ff;
+      --accent2:#7ee0c1;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:16px;
+      --max:980px;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root{
+        --bg:#f6f8ff;
+        --card:#ffffff;
+        --text:#101828;
+        --muted:#475467;
+        --line:rgba(16,24,40,.12);
+        --accent:#2563eb;
+        --accent2:#10b981;
+        --shadow:0 10px 30px rgba(16,24,40,.10);
+      }
+    }
+
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial;
+      background:
+        radial-gradient(1200px 800px at 20% 10%, rgba(110,168,255,.20), transparent 55%),
+        radial-gradient(1000px 700px at 80% 0%, rgba(126,224,193,.18), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a{ color: var(--accent); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+
+    header{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+      margin: 10px 0 18px;
+    }
+
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+
+    .brand .app{
+      font-size: 15px;
+      letter-spacing:.2px;
+      color: var(--muted);
+    }
+
+    h1{
+      margin:0;
+      font-size: 34px;
+      line-height:1.15;
+      letter-spacing:-0.6px;
+    }
+
+    .meta{
+      text-align:right;
+      color:var(--muted);
+      font-size: 14px;
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)) , var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px 20px;
+    }
+
+    h2{
+      margin: 22px 0 8px;
+      font-size: 20px;
+    }
+
+    ul{ padding-left: 22px; }
+
+    .note{
+      border-left: 3px solid var(--accent2);
+      padding: 10px 12px;
+      margin: 14px 0;
+      background: rgba(126,224,193,.08);
+      border-radius: 12px;
+    }
+
+    .footer{
+      margin-top: 18px;
+      font-size: 14px;
+      color: var(--muted);
+      display:flex;
+      justify-content:space-between;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="app">Blood Pressure Tracker</div>
+        <h1>Terms of Use</h1>
+      </div>
+      <div class="meta">
+        <div><strong>Last updated:</strong> February 17, 2026</div>
+        <div class="muted">Individual (Republic of Cyprus)</div>
+      </div>
+    </header>
+
+    <div class="card">
+      <p>
+        These Terms of Use (“Terms”) govern your use of the Blood Pressure Tracker mobile application (the “App”)
+        operated by <strong>Mykhailo Pashchenko</strong>.
+      </p>
+
+      <h2>1. Eligibility</h2>
+      <p>You must be at least 13 years old to use the App.</p>
+
+      <h2>2. Not Medical Advice</h2>
+      <div class="note">
+        This App does not provide medical advice and is not a medical device.
+      </div>
+
+      <h2>3. Advertising</h2>
+      <p>
+        The App is monetized through advertising. Third-party ad providers may process data in accordance
+        with their own privacy policies.
+      </p>
+
+      <h2>4. Intellectual Property</h2>
+      <p>All rights to the App belong to Mykhailo Pashchenko.</p>
+
+      <h2>5. Governing Law</h2>
+      <p>These Terms are governed by the laws of the Republic of Cyprus.</p>
+
+      <h2>6. Contact</h2>
+      <ul>
+        <li><strong>Name:</strong> Mykhailo Pashchenko</li>
+        <li><strong>Email:</strong> <a href="mailto:theaitoolsdev@gmail.com">theaitoolsdev@gmail.com</a></li>
+      </ul>
+
+      <div class="footer">
+        <div>© 2026 Mykhailo Pashchenko</div>
+        <div>Blood Pressure Tracker — Terms of Use</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
