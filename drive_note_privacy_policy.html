@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveNote — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #1a1918;
+            background: #f5f4f1;
+            line-height: 1.7;
+            padding: 24px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #2d9b83;
+        }
+        .subtitle {
+            color: #6d6c6a;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #3a3937;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+        li { margin-bottom: 6px; }
+        strong { color: #1a1918; }
+        a { color: #2d9b83; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight {
+            background: #c8f0e4;
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid #e5e4e1;
+        }
+        th {
+            font-weight: 600;
+            color: #6d6c6a;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .footer {
+            text-align: center;
+            color: #9c9b99;
+            font-size: 13px;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e4e1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">DriveNote — Mileage Tracker<br>Last updated: March 30, 2026</p>
+
+    <div class="highlight">
+        <strong>Summary:</strong> DriveNote stores your trip data locally on your device. We do not sell, share, or monetize your data. Optional cloud sync uses your personal Firebase account. We only collect what is needed to make trip tracking work.
+    </div>
+
+    <h2>1. What Data We Collect</h2>
+    <table>
+        <tr>
+            <th>Data Type</th>
+            <th>Purpose</th>
+            <th>Stored Where</th>
+        </tr>
+        <tr>
+            <td>GPS location</td>
+            <td>Record trip routes, calculate distance and speed</td>
+            <td>Local device + optional Firebase</td>
+        </tr>
+        <tr>
+            <td>Motion / Activity data</td>
+            <td>Detect when you start and stop driving</td>
+            <td>Not stored (used in real-time only)</td>
+        </tr>
+        <tr>
+            <td>Trip data</td>
+            <td>Distance, duration, speed, route, tags</td>
+            <td>Local device + optional Firebase</td>
+        </tr>
+        <tr>
+            <td>Google account info</td>
+            <td>Sign-in, cloud sync identification</td>
+            <td>Firebase Authentication</td>
+        </tr>
+        <tr>
+            <td>Crash reports</td>
+            <td>Fix bugs and improve app stability</td>
+            <td>Firebase Crashlytics</td>
+        </tr>
+    </table>
+
+    <h2>2. How Data Is Stored</h2>
+    <p><strong>Local storage:</strong> All trip data is stored in a local SQLite database on your device. This data never leaves your device unless you enable cloud sync.</p>
+    <p><strong>Cloud sync (optional):</strong> If you sign in with Google, your trip data is synced to Google Firebase Firestore. Data is stored in your personal account space and is not accessible to other users. Sync can be disabled by signing out.</p>
+    <p><strong>Encryption:</strong> Data in transit to Firebase is encrypted via TLS/SSL. Local data is stored in the app's private storage area, protected by Android's application sandboxing.</p>
+
+    <h2>3. Location Data</h2>
+    <p>DriveNote uses your device's GPS to:</p>
+    <ul>
+        <li>Detect when you start and stop driving</li>
+        <li>Record your driving route with coordinates, speed, and timestamps</li>
+        <li>Calculate trip distance, duration, and speed statistics</li>
+    </ul>
+    <p>Location data is collected in the background while the app's foreground service is running. A persistent notification is displayed whenever background location tracking is active.</p>
+    <p><strong>We do not:</strong></p>
+    <ul>
+        <li>Track your location when you are not driving</li>
+        <li>Share your location with third parties</li>
+        <li>Use your location for advertising</li>
+        <li>Sell location data</li>
+    </ul>
+
+    <h2>4. Activity Recognition</h2>
+    <p>DriveNote uses Android's Activity Recognition API to detect when you are in a vehicle. This data is processed in real-time on your device and is not stored or transmitted anywhere.</p>
+
+    <h2>5. Google Sign-In</h2>
+    <p>If you choose to sign in with Google, we receive your name, email address, and profile photo from your Google account. This information is used solely to identify your account for cloud sync. We do not access your Google Drive, contacts, calendar, or any other Google services.</p>
+
+    <h2>6. Firebase Services</h2>
+    <p>DriveNote uses the following Firebase services:</p>
+    <ul>
+        <li><strong>Firebase Authentication:</strong> Manages your sign-in session</li>
+        <li><strong>Cloud Firestore:</strong> Stores your trip data for cloud sync (only when signed in)</li>
+        <li><strong>Firebase Crashlytics:</strong> Collects anonymous crash reports to help us fix bugs</li>
+        <li><strong>Firebase Analytics:</strong> Collects anonymous usage statistics (no personal data)</li>
+    </ul>
+    <p>Firebase services are provided by Google and are governed by <a href="https://firebase.google.com/support/privacy">Google's Privacy Policy</a>.</p>
+
+    <h2>7. Data Sharing</h2>
+    <p>We do not share your personal data with any third parties. Your data is only shared in the following circumstances:</p>
+    <ul>
+        <li><strong>Cloud sync:</strong> Trip data is stored in Firebase Firestore under your authenticated account</li>
+        <li><strong>Crash reports:</strong> Anonymous crash data is sent to Firebase Crashlytics</li>
+        <li><strong>Export:</strong> When you choose to export your trips as CSV or PDF, the exported file is shared via your device's share sheet — you control who receives it</li>
+    </ul>
+
+    <h2>8. Data Retention</h2>
+    <p><strong>Local data:</strong> Stored on your device until you delete it. Uninstalling the app removes all local data.</p>
+    <p><strong>Cloud data:</strong> Stored in Firebase until you delete your account or remove individual trips. You can delete all your cloud data by signing out and requesting account deletion.</p>
+    <p><strong>Crash reports:</strong> Retained for 90 days by Firebase Crashlytics.</p>
+
+    <h2>9. Your Rights</h2>
+    <p>You can:</p>
+    <ul>
+        <li><strong>View</strong> all your trip data within the app</li>
+        <li><strong>Export</strong> your data as CSV or PDF at any time</li>
+        <li><strong>Delete</strong> individual trips or all trip data from the app</li>
+        <li><strong>Revoke</strong> location permissions at any time in your device settings</li>
+        <li><strong>Sign out</strong> to stop cloud sync</li>
+        <li><strong>Uninstall</strong> the app to remove all local data</li>
+    </ul>
+
+    <h2>10. Children's Privacy</h2>
+    <p>DriveNote is not intended for use by children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be posted within the app and on this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>12. Contact</h2>
+    <p>If you have questions about this privacy policy or your data, contact us at:</p>
+    <p><a href="mailto:privacy@aitoolsdev.com">privacy@aitoolsdev.com</a></p>
+
+    <div class="footer">
+        &copy; 2026 AI Tools Dev. All rights reserved.<br>
+        DriveNote — Mileage Tracker
+    </div>
+
+</div>
+</body>
+</html>
